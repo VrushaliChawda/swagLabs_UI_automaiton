@@ -1,0 +1,34 @@
+{
+  "name": "swagLabs_UI_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VrushaliChawda/swagLabs_UI_automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VrushaliChawda/swagLabs_UI_automation/issues"
+  },
+  "homepage": "https://github.com/VrushaliChawda/swagLabs_UI_automation#readme",
+  "dependencies": {
+    "cypress": "^8.5.0"
+  },
+  "cypress": "cypress open",
+  "cypress:headless": "cypress run --browser chrome --headless",
+  "test:e2e": "start-server-and-test start 3000 cypress",
+  "test:e2e:ci": "start-server-and-test start 3000 cypress:headless",
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.1.2",
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  }
+}

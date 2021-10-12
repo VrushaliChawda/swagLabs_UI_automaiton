@@ -1,0 +1,24 @@
+{
+  "baseUrl": "https://www.saucedemo.com/",
+  "reporter": "cypress-multi-reporters",
+  "retries": 0,
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  },
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "chromeWebSecurity": false,
+  "fixturesFolder" : "cypress/fixtures",
+  "integrationFolder": "cypress/integration",
+  "supportFile": "cypress/support/index.js",
+  "defaultCommandTimeout": 5000,
+  "viewportHeight": 797,
+  "viewportWidth": 1440
+
+}

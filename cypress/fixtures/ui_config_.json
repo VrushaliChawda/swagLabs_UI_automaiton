@@ -1,0 +1,83 @@
+{
+  "inventoryUrl": "https://www.saucedemo.com/inventory.html",
+  "itemDetailsEndpoint": "/inventory-item.html",
+  "cartEndpoint": "/cart",
+  "checkoutStepOneEndPoint": "/checkout-step-one",
+  "checkoutStepTwoEndPoint": "/checkout-step-two",
+  "checkoutCompleteEndPoint": "/checkout-complete",
+
+  "firstName": "Adam",
+  "lastName": "James",
+  "postalCode": "000000",
+  "paymentMethod": "SauceCard #31337",
+  "shippingMethod":"FREE PONY EXPRESS DELIVERY!",
+  "defaultProductList":
+  [
+    "Sauce Labs Backpack",
+    "Sauce Labs Bike Light",
+    "Sauce Labs Bolt T-Shirt",
+    "Sauce Labs Fleece Jacket",
+    "Sauce Labs Onesie",
+    "Test.allTheThings() T-Shirt (Red)"
+  ],
+  "decendingProductList":
+  [
+    "Test.allTheThings() T-Shirt (Red)",
+    "Sauce Labs Onesie",
+    "Sauce Labs Fleece Jacket",
+    "Sauce Labs Bolt T-Shirt",
+    "Sauce Labs Bike Light",
+    "Sauce Labs Backpack"
+  ],
+
+  "lowToHighProductList":
+  [
+    "$7.99",
+    "$9.99",
+    "$15.99",
+    "$15.99",
+    "$29.99",
+    "$49.99"
+  ],
+
+  "highToLowProductList":
+  [
+    "$49.99",
+    "$29.99",
+    "$15.99",
+    "$15.99",
+    "$9.99",
+    "$7.99"
+  ],
+
+  "accendingSort": "Name (A to Z)",
+  "decendingSort":"Name (Z to A)",
+  "lowToHighSort": "Price (low to high)",
+  "highToLowSort":"Price (high to low)",
+
+
+   "item1":"Sauce Labs Onesie",
+
+  "item1Desc": {
+    "name": "Sauce Labs Onesie",
+    "desc": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.",
+    "price": "$7.99"
+  },
+  "cartInventoryNames":
+  [
+    "Sauce Labs Onesie"
+  ],
+  "cartInventoryDesc":
+  [
+    "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."
+  ],
+  "cartInventoryQty":
+  [
+    "1"
+  ],
+  "cartInventoryPrice":
+  [
+    "$7.99"
+  ]
+}
+
