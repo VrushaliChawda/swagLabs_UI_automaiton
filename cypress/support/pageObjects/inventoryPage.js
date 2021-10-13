@@ -3,7 +3,8 @@ import * as config from"../../../cypress/fixtures/ui_config_.json"
 const productNameLink = "a[id^='item'][id$='title_link']"
 const inventoryPriceList = ".inventory_item_price"
 const cartCount = "div[id='shopping_cart_container'] > a > span"
-const burgerMenu = "button[id='react-burger-menu-btn]"
+const emptyCart = "div[id='shopping_cart_container'] > a"
+const burgerMenu = "button[id='react-burger-menu-btn']"
 const productSort = "select[data-test='product_sort_container']"
 const appLogo = ".app_logo"
 
@@ -53,6 +54,11 @@ export function verifySortOptionSelected(appliedOption){
 export function verifyCartCount(expectedCount){
     cy.get(cartCount).should("have.text",expectedCount)
 }
+
+export function verifyCartIsEmpty(){
+    cy.get(emptyCart).to.have.property()
+}
+
 
 export function clickBurgerMenu(){
     cy.get(burgerMenu).click()

@@ -7,7 +7,7 @@ import * as checkoutPage from "../../../cypress/support/pageObjects/checkoutPage
 
 describe('Place order at swag lab', function () {
 
-    before(('Standard user - End to end flow'),()=>
+    before(('Login to the application'),()=>
     {
         cy.uiLogin(Cypress.env("standard_user_username"),Cypress.env("user_password"));
         cy.verifyUrl(config.inventoryUrl)
@@ -35,7 +35,7 @@ describe('Place order at swag lab', function () {
         inventoryDetailsPage.verifyInventoryDesc(config.item1Desc.desc)
         inventoryDetailsPage.verifyInventoryPrice(config.item1Desc.price)
         inventoryDetailsPage.clickAddToCart()
-        inventoryPage.verifyCartCount(config.cartInventoryQty[0])
+        inventoryPage.verifyCartCount("1")
 
 
         //verify Item details in cart

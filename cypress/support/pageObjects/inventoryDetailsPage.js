@@ -5,10 +5,18 @@ const inventoryPrice = ".inventory_details_price"
 const inventoryImage = ".inventory_details_img_container > img"
 const backToProductButton = "button[data-test='back-to-products']"
 const addToCart = "button[data-test^='add-to-cart']"
-
+const removeButton = "button[data-test^='remove']"
 
 export function verifyInventoryName(expectedName){
     cy.get(inventoryName).should("have.text",expectedName)
+}
+
+export function removeItem(){
+    cy.get(removeButton).click()
+}
+
+export function removeButtonIsVisible(){
+    cy.get(removeButton).should("be.visible")
 }
 
 export function verifyInventoryDesc(expectedDesc){
@@ -30,9 +38,10 @@ export function clickBackToProductsButton(){
     cy.get(backToProductButton).click()
 }
 
-export function verifyAddToCart(){
-    cy.get(addToCart).should("have.text","Add to cart")
+export function addToCartIsVisible(){
+    cy.get(addToCart).should("be.visible")
 }
+
 
 export function clickAddToCart(){
     cy.get(addToCart).click()

@@ -5,6 +5,7 @@
   "checkoutStepOneEndPoint": "/checkout-step-one",
   "checkoutStepTwoEndPoint": "/checkout-step-two",
   "checkoutCompleteEndPoint": "/checkout-complete",
+  "sauceLabUrl": "https://saucelabs.com/",
 
   "firstName": "Adam",
   "lastName": "James",
@@ -57,27 +58,40 @@
 
 
    "item1":"Sauce Labs Onesie",
+  "item2":"Sauce Labs Bike Light",
 
   "item1Desc": {
     "name": "Sauce Labs Onesie",
     "desc": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.",
     "price": "$7.99"
   },
+
+  "item2Desc": {
+    "name": "Sauce Labs Bike Light",
+    "desc": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.",
+    "price": "$9.99"
+  },
+
   "cartInventoryNames":
   [
-    "Sauce Labs Onesie"
+    "Sauce Labs Onesie",
+    "Sauce Labs Bike Light"
+
   ],
   "cartInventoryDesc":
   [
-    "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."
+    "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.",
+    "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."
   ],
   "cartInventoryQty":
   [
+    "1",
     "1"
   ],
   "cartInventoryPrice":
   [
-    "$7.99"
+    "$7.99",
+    "$9.99"
   ]
 }
 
