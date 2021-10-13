@@ -16,7 +16,7 @@ describe('Login page',()=>
     })
 
     //It fails due to wrong error message
-    it.skip('login without password',()=>
+    it('login without password',()=>
     {
         loginPage.enterUserName(Cypress.env("standard_user_username"))
         cy.verifyText(loginPage.errorMessage,"Epic sadface: Password is required")
